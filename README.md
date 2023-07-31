@@ -1,1 +1,1 @@
-# stepper
+# This is a stepper program
