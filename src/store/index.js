@@ -10,7 +10,6 @@ export const useStore = defineStore('counter', {
       ExperienceDetails: [],
       CurrentOrganizationDetails: null
     },
-    // showData: JSON.parse(localStorage.getItem("Data")) || [],
     Data: [],
     AllData: [],
     editingItem: null,
@@ -33,9 +32,6 @@ export const useStore = defineStore('counter', {
       { title: "Actions", align: "center", key: "actions", sortable: false },
     ]
   }),
-  getters: {
-    double: state => state.count * 2,
-  },
   actions: {
     showData() {
       return JSON.parse(localStorage.getItem("Data")) || [];
